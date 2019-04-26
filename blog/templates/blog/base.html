@@ -17,9 +17,11 @@
     	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		  <!-- Links -->
 		  <ul class="navbar-nav">
-		    <li class="nav-item">
-		      <a class="nav-link" href="{% url 'post_new' %}">New post</a>
-		    </li>
+		  	{% if user.is_authenticated %}
+		    	<li class="nav-item">
+		      	<a class="nav-link" href="{% url 'post_new' %}">New post</a>
+		    	</li>
+		    {% endif %}
 		  </ul>
 
 		</nav>
