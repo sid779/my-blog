@@ -1,2 +1,2 @@
 # My Blog
-A Django web app.
+A Django based web app.
